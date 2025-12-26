@@ -1,0 +1,132 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form paragraphs */
+form p {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Calculate button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #434190;
+}
+
+/* Result text */
+#results {
+    margin-top: 20px;
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d3748;
+    background: #edf2f7;
+    border-left: 5px solid #5a67d8;
+    border-radius: 6px;
+}
+
+/* BMI guide box */
+#weight-guide {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f0f4ff;        /* light bluish shade */
+    border: 1px solid #c3dafe;
+    border-radius: 8px;
+}
+
+#weight-guide h3 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #3c366b;
+}
+
+#weight-guide p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #2d3748;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    input {
+        font-size: 16px; /* mobile typing better */
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    #results {
+        font-size: 18px;
+    }
+}
